@@ -1,0 +1,15 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vijay4github/bank_management_system_config.git
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8060/eureka
